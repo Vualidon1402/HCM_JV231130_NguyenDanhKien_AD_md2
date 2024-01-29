@@ -166,7 +166,9 @@ const HomePage = () => {
                 </tbody>
               </table>
               <hr />
-              <div className="totalAmount">Tổng tiền: {totalAmount}đ</div>
+              <div className="totalAmount">
+                Tổng tiền: {totalAmount.toLocaleString("vi-VN")}đ
+              </div>
             </div>
           )}
         </div>
