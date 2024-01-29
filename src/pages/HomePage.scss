@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: orange;
+  color: white;
+  padding: 20px;
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.body-container {
+  &-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 10px;
+    margin: 20px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid #c7c5c5;
+      padding: 10px;
+      text-align: center;
+      height: 370px;
+
+      &-img img {
+        max-width: 100%;
+        height: 250px;
+      }
+
+      &-name {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      &-price {
+        color: #007bff; // or any other color you prefer
+        font-weight: bold;
+        margin-top: 5px;
+      }
+      &-btn-addtocart {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          background-color: #0069d9;
+        }
+        &-text {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+#tbody1 {
+  img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #c7c5c5;
+    border-radius: 30%;
+  }
+}
+
+.header-shop {
+  position: relative;
+  display: flex;
+  p {
+    color: red;
+  }
+}
+.shopping-table {
+  padding: 0px 20px 0px 20px;
+  width: 500px;
+  background-color: black;
+  position: absolute;
+  right: -15px;
+
+  top: 48px;
+  border-radius: 1%;
+  &-title {
+    font-size: 23px;
+  }
+}
+.totalAmount {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.icon-delete {
+  cursor: pointer;
+  &:hover {
+    color: red;
+  }
+}
